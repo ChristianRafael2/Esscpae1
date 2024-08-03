@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        header{
+            padding:20px;
+            height:60px;
+        }
+
+        header nav {
+            float: right;
+        }
+
+        header nav a{
+            margin: 0px 5px;
+            text-decoration: none;
+            color: black;
+        }
+
+        header nav a:hover{
+            margin: 0px 5px;
+            text-decoration: none;
+            color: black;
+        }
+
+        header nav a.login-btn {
+            display: inline-block;
+            height: 40px;
+            width: 85px;
+            background-color: blue;
+            border-radius: 20px;
+            color: white;
+            text-align: center;
+            line-height: 40px;
+            
+        }
+
+        section.content {
+            padding-top: 100px;
+            min-height: calc(100vh - 60px - 92px)
+        }
+
+
+        section.content .logo{
+            text-align: center;
+            justify-content: center;
+            font-size: 95px; 
+
+        }
+         
+          section.content form{
+          /*background-color: aqua; */
+            width: 50%;
+            margin: 50px auto;
+        }
+
+        section.content form input[type=text] {
+            width:100%;
+            height: 45px;
+            border-radius: 22px;
+            padding: 10px 50px;
+            font-size: 30px;
+            outline: none;
+        }
+
+        footer div {
+            height: 46px;
+            background-color: rgb(214, 214, 214);
+            color: white ;
+        
+        }
+
+        .search{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            width: 100%;
+            gap: 20px;
+        }
+
+        .search__action{
+            display:flex;
+            justify-content:center;
+            gap:16px;
+
+        }
+        
+        .search__action button {
+            border: none;
+            padding:7px 12px;
+            border-radius:6px;
+            cursor:pointer;
+
+        }
+
+        .search__action button:hover {
+            border: 1px solid var(--color-black-secondary);
+        }
+
+        .language {
+            display: flex;
+            justify-content: center;
+            font-size: 15px;
+            color: var(--color-black-primary)
+            
+
+        }
+        
+        .language a {
+            margin-right:6px;
+            margin-bottom:50px;
+        }
+
+        footer { 
+            position: absolute; 
+            bottom: 0; 
+            left: 0; 
+            z-index: 10;
+            width: 100%;
+        }
+        .Setting {
+            padding: 3px;
+        }
+        .Setting-left1{
+            position: absolute;
+            right: 200px;
+        }
+        .Setting-left2{
+            position: absolute;
+            right: 80px;
+        }
+        .Setting-left3{
+            position: absolute;
+            right: 0px;
+        }
+
+
+
+     
+     </style>
+</head>
+<body>
+  <header>
+    <nav>
+     <a href="#">Gmail</a>
+     <a href="#">Gambar</a>
+     <a href="#">😎</a>
+     <a href="#" class="login-btn">Login</a>
+    </nav>
+    <div style="clear: right;"></div>
+  </header>
+  <section class="content">
+     <div class="logo">
+     <img src="https://www.google.com/logos/doodles/2024/paris-games-sailing-6753651837110529.4-law.gif"/>
+     </div>
+     <b></b>
+     <!-- <h1 class="google-title">Google </h1>  -->
+    
+
+     <form action="https://www.google.com/search" method="get" >
+     <input  type="text" name="q" id="" placeholder="Cari di sini"> 
+    </form>
+    <div class="search__action">
+        <button>Penulusuran Google</button>
+        <button>Saya lagi beruntung</button>
+    </div>
+    <div class="language">
+        
+            Google tersedia dalam bahasa:
+            <a href="#english">English</a>
+            <a href="#indonesia">Indonesia</a>
+            
+        </div>
+    </div>
+     </section>
+  <footer>
+    <div class="top" >Indonesia</div>
+    <hr>
+    <div class="bottom">
+        <a class="Setting">Tentang</a>
+        <a class="Setting">Periklanan</a>
+        <a class="Setting">Bisnis</a>
+        <a class="Setting">Cara kerja Penelusuran </a>
+
+        <a class="Setting-left1">Privasi</a>
+        <a class="Setting-left2">Persyaratan</a>
+        <a class="Setting-left3">Setelan</a>
+        </div>
+
+</body>
+</html>
